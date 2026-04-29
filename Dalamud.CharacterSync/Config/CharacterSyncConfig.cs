@@ -1,9 +1,8 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-using Dalamud.CharacterSync;
 using Dalamud.Configuration;
 
-namespace Dalamud.RichPresence.Config
+namespace Dalamud.CharacterSync.Config
 {
     /// <summary>
     /// Plugin configuration.
@@ -69,6 +68,11 @@ namespace Dalamud.RichPresence.Config
         /// Gets or sets the "set name".
         /// </summary>
         public string SetName;
+
+        /// <summary>
+        /// Gets or sets the number of backups to keep.
+        /// </summary>
+        public int BackupCount = 7;
 
         /// <summary>
         /// Save the configuration.
